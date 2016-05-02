@@ -31,3 +31,52 @@
 #Total 5 (delta 0), reused 0 (delta 0)
 #To git@github.com:tzz/datatest.git
 # * [new branch]      master -> master
+
+
+% git clone  git@github.com:xx/xx
+
+
+# get a file to add...
+% cp ~/bin/encode.pl .
+% git add encode.pl
+% git commit -m 'adding encode.pl'
+#Created commit 6750342: adding encode.pl
+# 1 files changed, 1 insertions(+), 0 deletions(-)
+# create mode 100644 encode.pl
+% git log
+#commit 675034202629e5497ed10b319a9ba42fc72b33e9
+#Author: The Other Ted <tzz@bu.edu>
+#Date:   ...commit date here...
+#
+#    adding encode.pl
+#
+#commit b238ddca99ee582e1a184658405e2a825f0815da
+#Author: Ted Zlatanov <tzz@lifelogs.com>
+#Date:   ...commit date here...
+#
+#    initializing
+% git branch empty-gdbinit
+% git branch
+#  empty-gdbinit
+#* master
+% git checkout empty-gdbinit
+#Switched to branch "empty-gdbinit"
+% git branch
+#* empty-gdbinit
+#  master
+% git add gdbinit
+% git commit -m 'empty gdbinit'
+#Created commit 5512d0a: empty gdbinit
+# 1 files changed, 0 insertions(+), 1005 deletions(-)
+% git push
+#updating 'refs/heads/master'
+#  from b238ddca99ee582e1a184658405e2a825f0815da
+#  to   675034202629e5497ed10b319a9ba42fc72b33e9
+#Generating pack...
+#Done counting 4 objects.
+#Result has 3 objects.
+#Deltifying 3 objects...
+# 100% (3/3) done
+#Writing 3 objects...
+# 100% (3/3) done
+#Total 3 (delta 0), reused 0 (delta 0)
