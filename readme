@@ -31,3 +31,25 @@
 #Total 5 (delta 0), reused 0 (delta 0)
 #To git@github.com:tzz/datatest.git
 # * [new branch]      master -> master
+
+
+# start clean
+% git clone git@github.com:tzz/datatest.git
+# ...clone output...
+# what branches are available?
+% git branch -a
+#* master
+#  origin/HEAD
+#  origin/empty-gdbinit
+#  origin/master
+# do the merge
+% git merge origin/empty-gdbinit
+#Updating 6750342..5512d0a
+#Fast forward
+# gdbinit | 1005 ---------------------------------------------------------------
+# 1 files changed, 0 insertions(+), 1005 deletions(-)
+# now push the merge to the server
+% git push
+#Total 0 (delta 0), reused 0 (delta 0)
+#To git@github.com:tzz/datatest.git
+#   6750342..5512d0a  master -> master
